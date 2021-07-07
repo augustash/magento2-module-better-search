@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Search Improvements Module
+ *
+ * @author    Peter McWilliams <pmcwilliams@augustash.com>
+ * @copyright Copyright (c) 2021 August Ash (https://www.augustash.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="catalog">
+            <group id="search">
+                <field id="debug_scores" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Enable Search Score Debugging</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="minimum_score" translate="label comment" type="text" sortOrder="110" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Minimum Search Score</label>
+                    <comment>Decimal value. Start from 1.0 and increment by 5.0 to find the ideal value.</comment>
+                    <validate>validate-number validate-zero-or-greater</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

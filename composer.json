@@ -1,0 +1,26 @@
+{
+    "name": "augustash/module-better-search",
+    "type": "magento2-module",
+    "description": "Magento 2 ElasticSearch Improvements",
+    "version": "1.0.0",
+    "license": [
+        "MIT"
+    ],
+    "require": {
+        "magento/framework": ">= 101.0.0",
+        "magento/module-catalog": "*",
+        "magento/module-elasticsearch": "*",
+        "magento/module-store": "*"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Augustash\\BetterSearch\\": "src/"
+        },
+        "files": [
+            "src/registration.php"
+        ]
+    }
+}

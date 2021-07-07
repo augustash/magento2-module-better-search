@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Search Improvements Module
+ *
+ * @author    Peter McWilliams <pmcwilliams@augustash.com>
+ * @copyright Copyright (c) 2021 August Ash (https://www.augustash.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <catalog>
+            <search>
+                <debug_scores>0</debug_scores>
+                <minimum_score>1.0</minimum_score>
+            </search>
+        </catalog>
+    </default>
+</config>
