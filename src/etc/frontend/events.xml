@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Search Improvements Module
+ *
+ * @author    Peter McWilliams <pmcwilliams@augustash.com>
+ * @copyright Copyright (c) 2021 August Ash (https://www.augustash.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="controller_action_predispatch_catalogsearch_result_index">
+        <observer name="redirect_to_catalog_product" instance="Augustash\BetterSearch\Observer\RedirectToCatalogProduct"/>
+    </event>
+</config>
